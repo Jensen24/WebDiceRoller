@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Nicolas Delgado
+    Class:   Software Engineering
+    Description: Nick's BlackJack Web Dice Application
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="wdr.css">
+    <script src="wdr.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BlackJack</h1>
+        <h2 id = "playerScore">Player Score: 0 </h2>
+        <h2 id = "dealerScore" style="display:none;">Dealer Score: 0 </h2>
+        <h2 id = "result"></h2> 
+        <div class="dice">
+            <p class="Player1">Player 1</p>
+            <img class="img1" src="dice6.jpg">
+        </div>
+
+        <div class="dice">
+            <p class="Dealer">Dealer</p>
+            <img class="img2" src="dice6.jpg">
+        </div>
+    </div>
+
+    <div class="container bottom">
+        <button type="button" class="butn"
+            onClick="playerRoll()">
+            Hit Me
+        </button>
+    </div>
+    <div class="container bottom">
+        <button type="button" class="butn"
+            onClick="stand()">
+            Stand
+        </button>
+    </div>
+    <div class="container bottom">
+        <button type="button" class="butn"
+            onClick="checkScore()">
+            Check Score
+        </button>
+    </div>
+    <div class="container bottom">
+        <button type="button" class="butn" 
+            onClick="editName()">
+            Edit Player Name
+        </button>
+    </div>
+</body>
+
+</html>
